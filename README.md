@@ -1,71 +1,55 @@
+# 🎵 Spotify Song Classification by Mood
 
-# 🧠 COVID-19 Data Analysis & Visualization – Internship Task 1
+This project was developed as part of an internship task at **Future Interns**. It focuses on classifying songs based on their **mood** using audio features extracted with `librosa`, followed by training a machine learning model for classification.
 
-Welcome to my first task as a **Machine Learning Intern at Future Interns**!  
-In this project, I explored the impact of the COVID-19 pandemic using data analysis and visualization techniques in **Python** and **Tableau**.
+## 📁 Dataset
 
----
+The dataset used is `song_data.csv`, which contains preprocessed Spotify audio features along with mood labels for each song.
 
-## 📌 Project Objective
+## 🎯 Objective
 
-The goal of this task was to:
-- Analyze real-world COVID-19 datasets
-- Visualize key metrics such as confirmed, recovered, and death cases
-- Derive meaningful insights through exploratory data analysis (EDA)
+To build a machine learning model that predicts the mood of a Spotify song using its audio features.
 
----
+## 📊 Features Used
 
-## 🛠 Tools & Technologies
+- Extracted audio features such as:
+  - Tempo
+  - Energy
+  - Loudness
+  - Danceability
+  - and more...
 
-- **Python**
-- **Jupyter Notebook**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **Tableau** (for supplementary dashboard visualizations)
+## 🧠 Model Overview
 
----
+- **Algorithm**: Random Forest Classifier
+- **Preprocessing**:
+  - Label Encoding for categorical features
+  - Standard Scaling for numerical features
+- **Evaluation Metrics**:
+  - Accuracy Score
+  - Confusion Matrix
+  - Classification Report
 
-## 📂 Files Included
+## 🛠️ Installation
 
-- `task 1.ipynb`: The Jupyter Notebook containing data cleaning, analysis, and visualizations.
-- `covid-19 project tablue.mp4`: *(Optional)* A demo video showcasing a Tableau dashboard for COVID-19.
+Install all necessary libraries:
 
----
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn librosa
 
-## 📊 Key Highlights
+🚀 How to Run the Project
+Place song_data.csv in the same directory as the notebook.
 
-- ✅ Cleaned and preprocessed real-world COVID-19 data
-- 📈 Created time-series plots for global and country-specific trends
-- 🌍 Performed country-wise and continent-wise analysis
-- 🧭 Identified the most affected countries and peak infection periods
-- 📊 Built engaging visualizations to make data insights easier to understand
+Open task 1 (1).ipynb in Jupyter Notebook.
 
----
+Run all cells sequentially to train and evaluate the model.
 
-## 🚀 How to Run
+📈 Output Includes
+Accuracy of the classifier
 
-To run this project on your local machine:
+Confusion Matrix visualization
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/covid19-analysis-task1.git
-   cd covid19-analysis-task1
+Detailed classification metrics
 
-## 📚 What I Learned
-    Through this task, I:
-
-    Improved my skills in data cleaning and EDA
-
-    Understood how to visualize real-time data with clarity
-
-    Learned to present findings using storytelling with data
-
-    Got hands-on experience with Tableau for interactive dashboards
-
-## 👨‍🎓 About Me
-    I’m Sumit, currently pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning from Sanjay Ghodawat University.
-    As a Machine Learning Intern at Future Interns, I am passionate about turning data into impactful insights and exploring the real-world applications of AI.
-
-
+👨‍💻 Author
+Sumit — developed as an internship project for Future Interns
